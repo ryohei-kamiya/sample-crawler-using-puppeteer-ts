@@ -1,0 +1,44 @@
+{
+  "name": "sample-crawler-using-puppeteer-ts",
+  "version": "1.0.0",
+  "description": "A sample web crawler using TypeScript and Puppeteer",
+  "main": "dist/main.js",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "webpack",
+    "start": "node dist/main.js -u ${npm_config_u}",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "cz": "node_modules/.bin/cz"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "puppeteer": "^20.1.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
